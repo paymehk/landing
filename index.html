@@ -13,8 +13,9 @@
 
         // 第二次重定向
         setTimeout(function() {
-            window.location.href = "https://payme.hsbc.com.hk/en/personal"; // 第二個重定向的URL
-        }, 3000); // 5秒後跳轉到下一個頁面
+            // 確保第一次重定向完成後再執行第二次重定向
+            window.location.replace("https://payme.hsbc.com.hk/en/personal"); // 第二個重定向的URL
+        }, 1000); // 1秒後跳轉到下一個頁面
     </script>
 </head>
 <body>
